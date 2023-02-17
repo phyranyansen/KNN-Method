@@ -14,7 +14,8 @@
 
 <script src="<?= base_url().'assets/boostrap/plugins/jquery/jquery.min.js';?>"></script>
 
-
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <!-- SweetAlert2 -->
 <script src="<?= base_url().'assets/boostrap/plugins/sweetalert2/sweetalert2.min.js';?>"></script>
 <script src="<?= base_url().'assets/boostrap/plugins/toastr/toastr.min.js';?>"></script>
@@ -112,6 +113,10 @@ $(function() {
         "info": false,
         "autoWidth": false,
         "responsive": true,
+    });
+
+    $("input[data-bootstrap-switch]").each(function(){
+      $(this).bootstrapSwitch('state', $(this).prop('checked'));
     });
 });
 </script>

@@ -115,7 +115,7 @@
             <form action="#" id="form-upload">
                 <div class="modal-body">
                     <div class="form-group col-md-12">
-                        <label for="excel">id Fakultas</label>
+                        <label for="excel">Fakultas</label>
                         <select name="id_fakultas" class="form-control select2bs4" style="width: 100%;"  id="id_fakultas">
                             <?php foreach($fakultas as $row) { ?>
                             <option value="<?= $row['Id_Fakultas'] ?>"><?= $row['Nama_Fakultas'] ?></option>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="form-group col-md-12">
                         <label for="excel">Nama Jurusan</label>
-                        <input type="text" class="form-control" id="nama_jurusan" placeholder="Fakultas">
+                        <input type="text" class="form-control" id="nama_jurusan" placeholder="Jurusan">
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
@@ -151,7 +151,11 @@
                     <input type="hidden" class="form-control" id="get_id_jurusan">
                     <div class="form-group col-md-12">
                         <label for="excel">Fakultas</label>
-                        <input type="text" class="form-control" id="get_id_fakultas" placeholder="FT">
+                        <select name="id_fakultas" class="form-control select2bs4" style="width: 100%;"  id="get_id_fakultas">
+                            <?php foreach($fakultas as $row) { ?>
+                            <option value="<?= $row['Id_Fakultas'] ?>"><?= $row['Nama_Fakultas'] ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
                     <div class="form-group col-md-12">
                         <label for="excel">Nama Jurusan</label>

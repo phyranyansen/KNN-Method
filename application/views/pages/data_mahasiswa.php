@@ -64,6 +64,7 @@
                                         <th>Alamat</th>
                                         <th>Jurusan</th>
                                         <th>Fakultas</th>
+                                        <th>Status</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -77,13 +78,17 @@
                                         <td><?= $row['Alamat'] ?></td>
                                         <td><?= $row['Nama_Jurusan'] ?></td>
                                         <td><?= $row['Nama_Fakultas'] ?></td>
-                                        <td style="width: 100px;">
-                                            <div class="btn btn-info" id="btedit" data-id2='<?= $row['NPM']?>'>
+                                        <td><?php if($row['Status']<1){ ?><i class="bi bi-check-lg"  style="color:green"></i>  Aktif <?php } else {?> <i class="bi bi-x-lg" style="color:red"></i> Tidak Aktif <?php }?></td>
+                                        <td style="width: fit-content;">
+                                            <div class="btn btn-info btn-sm" id="btedit" data-id2='<?= $row['NPM']?>'>
                                                 <i class="fa fa-edit"></i>
                                             </div>
-                                            <div class="btn btn-danger" id="btdelete" data-id1='<?= $row['NPM']?>'>
+                                            <div class="btn btn-danger btn-sm" id="btdelete" data-id1='<?= $row['NPM']?>'>
                                                 <i class="fa fa-trash"></i>
                                             </div>
+                                            <small>
+                                                <input type="checkbox" name="my-checkbox" data-bootstrap-switch checked>
+                                            </small>
                                         </td>
                                     </tr>
                                     <?php } ?>
@@ -97,6 +102,7 @@
                                         <th>Alamat</th>
                                         <th>Jurusan</th>
                                         <th>Fakultas</th>
+                                        <th>Status</th>
                                         <th></th>
                                     </tr>
                                 </tfoot>

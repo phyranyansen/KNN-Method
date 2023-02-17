@@ -9,7 +9,7 @@
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
-<li class="breadcrumb-item"><a href="#">Home</a></li>
+<li class="breadcrumb-item"><a href="<?= base_url(); ?>">Home</a></li>
 <li class="breadcrumb-item active">Home</li>
 </ol>
 </div>
@@ -30,7 +30,7 @@
                                 <div class="icon">
                                     <i class="ion ion-stats-bars"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="<?= base_url('data-testing'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                               </div>
                           </div>
                           <div class="col-lg-3 col-6">
@@ -42,7 +42,7 @@
                                 <div class="icon">
                                     <i class="ion bi bi-card-checklist"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="<?= base_url('data-training'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                               </div>
                           </div>
                           <div class="col-lg-3 col-6">
@@ -54,7 +54,7 @@
                                 <div class="icon">
                                     <i class="ion bi bi-people-fill"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="<?= base_url('dosen'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                               </div>
                           </div>
                           <div class="col-lg-3 col-6">
@@ -66,7 +66,7 @@
                                 <div class="icon">
                                     <i class="ion bi bi-mortarboard-fill"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="<?= base_url('mahasiswa'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                               </div>
                           </div>
                           

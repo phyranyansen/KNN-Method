@@ -14,9 +14,12 @@
  <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css';?>">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/datatables-responsive/css/responsive.bootstrap4.min.css';?>">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/datatables-buttons/css/buttons.bootstrap4.min.css';?>">
-    <!-- DataTables AdminLTE-->
+
+<!-- DataTables AdminLTE-->
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/select2/css/select2.min.css';?>">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css';?>">
+<link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+<link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css';?>">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/daterangepicker/daterangepicker.css';?>">
 <link rel="stylesheet" href="<?= base_url().'assets/boostrap/plugins/select2/css/select2.min.css';?>">
