@@ -32,11 +32,13 @@
                                         <span class="dropdown-item dropdown-header">Menu</span>
                                         <div class="dropdown-divider"></div>
 
+                                        <?php if(count($universitas)<1){ ?> 
                                         <a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal-add">
-                                            <i class="bi bi-plus-circle mr-2"></i> Tambah Data
+                                          <i class="bi bi-plus-circle mr-2"></i> Tambah Data
                                             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
                                         </a>
                                         <div class="dropdown-divider"></div>
+                                        <?php } ?>
                                         <a href="#" class="dropdown-item" id="delete_all">
                                             <i class="bi bi-trash mr-2"></i> Hapus Semua
                                             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
